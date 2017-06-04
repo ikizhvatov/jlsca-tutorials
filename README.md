@@ -12,7 +12,7 @@ It all works alike on Linux, Mac, and Windows.
 
 ## Examples RHme2
 
-* **piece of SCAke** - correlation power analysis attack on unprotected AES-128
+* [piece of SCAke](rhme2-pieceofscake.ipynb) - correlation power analysis attack on unprotected AES-128
 * **stil not SCAry** - linear regression analysis attack on AES-128 with a misalignment countermeasure
 * **eSCAlate** - correlation power analysis attack on on AES-128 with a misalignment countermeasure
 
