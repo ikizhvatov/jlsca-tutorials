@@ -12,7 +12,8 @@ It all works alike on Linux, Mac, and Windows.
 
 ## Examples RHme2
 
-* Piece of SCAke (DPA on unprotected AES-128)
-* eSCAlate (DPA on AES-128 with a countermeasure)
+* **piece of SCAke** - correlation power analysis attack on unprotected AES-128
+* **stil not SCAry** - linear regression analysis attack on AES-128 with a misalignment countermeasure
+* **eSCAlate** - correlation power analysis attack on on AES-128 with a misalignment countermeasure
 
 Tarballs with power traces available at https://drive.google.com/drive/folders/0B2slHLSL3nXaTFBWMUxHSkNmSTg
