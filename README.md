@@ -10,5 +10,9 @@ Tutorials and examples on how to use Jlsca, the side channel analysis toolkit wr
 
 It all works alike on Linux, Mac, and Windows.
 
-## Tutorials
-* RHme2 hard SCA challenge (DPA on AES-128 with some misalignment)
+## Examples RHme2
+
+* Piece of SCAke (DPA on unprotected AES-128)
+* eSCAlate (DPA on AES-128 with a countermeasure)
+
+Tarballs with power traces available at https://drive.google.com/drive/folders/0B2slHLSL3nXaTFBWMUxHSkNmSTg
