@@ -12,6 +12,8 @@ It all works alike on Linux, Mac, and Windows.
 
 ## Examples RHme2
 
+These are examples on how to do the SCA challenges of the [RHme2 embedded CTF](https://github.com/Riscure/Rhme-2016).
+
 * [piece of SCAke](rhme2-pieceofscake.ipynb) - correlation power analysis attack on unprotected AES-128
 * [still not SCAry](rhme2-stillnotscary.ipynb) - linear regression analysis attack on AES-128 with a misalignment countermeasure
 * [eSCAlate](rhme2-escalate.ipynb) - correlation power analysis attack on on AES-128 with a misalignment countermeasure
