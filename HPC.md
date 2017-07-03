@@ -10,7 +10,7 @@ To run Julia on the cluster, some general preparation is necessary.
 
 1. Setup passwordless SSH login from the login node to the used cluster nodes. Passwordless means:
 
-    * Setup the login with SSH key only using `ssh-copy-id` (and generating the SSH key pair if not yet exists). This is done only once.
+    * Setup the login with SSH key using `ssh-copy-id` (and generating the SSH key pair if not yet exists). This is done from the login node once per node where the workers will be deployed.
     * If needed, cache the SSH private key password with `ssh-agent` and `ssh-add`. This is done once every login to the login node (and can be put in one of the login scripts of course).
 
 2. Install Julia by uncompressing a generic Linux tarball from https://julialang.org/downloads/ in the home directory. 
@@ -35,7 +35,11 @@ The exisiting code needs a simple modification to be run on the cluster.
 addprocs([("cn89.science.ru.nl", 4), ("cn88.science.ru.nl", 2), ("cn13.science.ru.nl", 2), ("cn99.science.ru.nl", 2)]; tunnel=true, exeflags="--depwarn=no")
 ```
 
-Each node spec (optionally) includes the number of workers on each node. Normally, the number of workers is equal to the number of physical CPUs on the node. (Note that `--depwarns=no` was added to avoid warnings from Julia version 0.6.0, it may not be necessary any more as the Jlsca code has been adapted.)
+Each node spec (optionally) includes the number of workers on each node. Normally, the number of workers is equal to the number of physical CPUs on the node.
+
+On some clusters, even no modifications to the code woudl be necessary, but a `--machinefile` option passing julia a list of nodes from a file. In my case, the `tunnel` option appeared to be necessary for the processes to communicate between the nodes, so I used the `addprocs` way.
+
+The `--depwarns=no` was added to avoid warnings from Julia version 0.6.0, it may not be necessary here and below any more as the Jlsca code has been adapted.
 
 ### 3. Execution
 
