@@ -16,7 +16,7 @@ These are examples on how to do the SCA challenges of the [RHme2 embedded CTF](h
 
 * [piece of SCAke](rhme2-pieceofscake.ipynb) - correlation power analysis attack on unprotected AES-128
 * [still not SCAry](rhme2-stillnotscary.ipynb) - linear regression analysis attack on AES-128 with a misalignment countermeasure
-* [eSCAlate](rhme2-escalate.ipynb) - correlation power analysis attack on on AES-128 with a misalignment countermeasure
+* [SCAlate](rhme2-escalate.ipynb) - correlation power analysis attack on on AES-128 with a misalignment countermeasure
 
 Tarballs with power traces available at https://drive.google.com/drive/folders/0B2slHLSL3nXaTFBWMUxHSkNmSTg
 

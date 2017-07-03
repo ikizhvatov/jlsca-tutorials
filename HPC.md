@@ -1,6 +1,8 @@
 # Jlsca and High-Performance Computing
 
-Jlsca can be run on a cluster of Linux machines. Here is an example tested on the [Radboud University cluster](http://wiki.science.ru.nl/cncz/index.php?title=Hardware_servers&setlang=en#.5BReken-.5D.5BCompute_.5Dservers.2Fclusters). The example is run from the login node on several machines in the cluster. The login node and the machines on the cluster share the same user home folder (mounted over NFS) where Julia is installed and trasecet is located.
+Jlsca can be run on a cluster of Linux machines. Here is an example tested on the [Radboud University cluster](http://wiki.science.ru.nl/cncz/index.php?title=Hardware_servers&setlang=en#.5BReken-.5D.5BCompute_.5Dservers.2Fclusters).
+
+The example is run from the login node on several machines in the cluster. The login node and the machines on the cluster share the same user home folder (mounted over NFS) where Julia is installed and the traceset is located.
 
 This example uses the traceset from testcase01 of https://github.com/ikizhvatov/dpa-tools-benchmarking.
 
@@ -49,7 +51,7 @@ Execute the code normally from the login node:
 ilyak@lilo5:~/dpa-tools-benchmarking/testcase01$ julia --depwarn=no main-inccpa-multinode.jl aes128_sb_ciph_deadbeefcafebabe1122334455667788.trs
 ```
 
-It will take some time to start up, and then you can observe the script printing out a large number of workers. On the oter nodes, you can observe several julia processes spawned and the load going up.
+It will take some time to start up, and then you can observe the script printing out a large number of workers. On the worker nodes, you can observe several julia processes spawned and the load going up.
 
 The execution of this example in my case took 100 seconds.
 
