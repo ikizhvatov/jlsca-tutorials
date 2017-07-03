@@ -41,7 +41,7 @@ Each node spec (optionally) includes the number of workers on each node. Normall
 
 On some clusters, even no modifications to the code woudl be necessary, but a `--machinefile` option passing julia a list of nodes from a file. In my case, the `tunnel` option appeared to be necessary for the processes to communicate between the nodes, so I used the `addprocs` way.
 
-The `--depwarns=no` was added to avoid warnings from Julia version 0.6.0, it may not be necessary here and below any more as the Jlsca code has been adapted.
+The `--depwarn=no` was added to avoid warnings from Julia version 0.6.0, it may not be necessary here and below any more as the Jlsca code has been adapted.
 
 ### 3. Execution
 
