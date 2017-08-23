@@ -6,7 +6,7 @@ Examples on how to use Jlsca, the side channel analysis toolkit written in Julia
 * Julia (0.6.0 is tested), https://julialang.org
 * IJulia, https://github.com/JuliaLang/IJulia.jl
 * Jlsca package, https://github.com/Riscure/Jlsca
-* Pycall and PyPlot packages, install in julia via Pkg.add()
+* PyCall and PyPlot packages, install in julia via Pkg.add()
 
 It all works alike on Linux, Mac, and Windows.
 
