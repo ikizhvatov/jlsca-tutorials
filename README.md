@@ -26,7 +26,7 @@ These are simple examples on how to do the SCA challenges of the [RHme2 embedded
 * [still not SCAry](rhme2-stillnotscary.ipynb) - linear regression analysis attack on AES-128 with a misalignment countermeasure
 * [SCAlate](rhme2-escalate.ipynb) - correlation power analysis attack on AES-128 with a misalignment countermeasure
 
-Tarballs with power traces available at https://drive.google.com/drive/folders/0B2slHLSL3nXaTFBWMUxHSkNmSTg
+Tarballs with power traces available at https://drive.google.com/drive/folders/0B2slHLSL3nXaTFBWMUxHSkNmSTg, shasums included.
 
 ## Example HPC (runnig on a computing cluster)
 
