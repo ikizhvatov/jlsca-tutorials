@@ -10,6 +10,8 @@ Examples on how to use Jlsca, the side channel analysis toolkit written in Julia
 
 It all works alike on Linux, Mac, and Windows.
 
+Here is [a docker image built on top of Orka](https://github.com/ikizhvatov/Orka/tree/master/marvelsplus) with all the prerequisites (apart from some example tracesets).  
+
 ### Starting IJulia's Jupyter with threading
 
 Jlsca's incremental correlation benefits from more threads. By default Julia only has 1 thread, but you can configure this by setting environment variable 'JULIA_NUM_THREADS'. Start the notebook like this to give Julia 2 threads:
@@ -43,4 +45,4 @@ Jlsca can be run on a cluster of Linux machines.
 
 ## Examples SHA (HMAC)
 
-* [DPA on HMAC-SHA1 running on STM32F417 with hardware SHA accelerator](hmacsha1pinata.ipynb). This is an advanced example.
+* [DPA on HMAC-SHA1](hmacsha1pinata.ipynb) running on STM32F417 with hardware SHA accelerator. This is an advanced example. Traceset [here](https://drive.google.com/open?id=0B-My9BsChztIM21sdWxWRWRrZGs).
