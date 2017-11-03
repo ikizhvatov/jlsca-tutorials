@@ -24,7 +24,7 @@ JULIA_NUM_THREADS=2 julia -e "using IJulia; notebook()"
 
 Working with any tool starts with the data formats. Jlsca natively works with trs format, originally used by Riscure Inspector, and in addition handles other formats.
 
-* [Daredevil (split binary) format](https://github.com/SideChannelMarvels/Daredevil). Jlsca supports reading and writing, and includes a converter to/from trs. Examples of conversion are in RHme notebooks below.
+* [Daredevil (split binary) format](https://github.com/SideChannelMarvels/Daredevil). Jlsca natively supports it for both reading and writing, and includes a converter to/from trs. Whitebox example notebook below shows how to do conversion.
 * [ChipWhisperer project format](https://wiki.newae.com/File_Formats). Examples of how to convert data from CWP to trs are below in RHme2 notebooks. In case you would like to export a trs into CWP, here is the noteboook: [trs2cwp.ipynb](trs2cwp.ipynb).
 
 ## DPA on SW AES implementations
