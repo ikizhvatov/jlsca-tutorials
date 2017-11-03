@@ -1,9 +1,9 @@
 # Jlsca tutorials
-Examples on how to use Jlsca, the side channel analysis toolkit written in Julia.
+Examples on how to use [Jlsca](https://github.com/Riscure/Jlsca), the side channel analysis toolkit written in Julia.
 
 ## Prerequisites
 
-* Julia (0.6.0 is tested), https://julialang.org
+* Julia (0.6.1 is tested), https://julialang.org
 * IJulia, https://github.com/JuliaLang/IJulia.jl
 * Jlsca package, https://github.com/Riscure/Jlsca
 * PyCall and PyPlot packages, install in julia via Pkg.add()
@@ -14,35 +14,41 @@ Here is [a docker image built on top of Orka](https://github.com/ikizhvatov/Orka
 
 ### Starting IJulia's Jupyter with threading
 
-Jlsca's incremental correlation benefits from more threads. By default Julia only has 1 thread, but you can configure this by setting environment variable 'JULIA_NUM_THREADS'. Start the notebook like this to give Julia 2 threads:
+Jlsca's incremental correlation benefits from more threads. By default Julia only has 1 thread, but you can configure this by setting environment variable `JULIA_NUM_THREADS`. Start the notebook like this to give Julia 2 threads:
 
 ```
 JULIA_NUM_THREADS=2 julia -e "using IJulia; notebook()"
 ```
 
-## Examples RHme2
+## Trace formats
+
+Working with any tool starts with the data formats. Jlsca natively works with trs format, originally used by Riscure Inspector, and in addition handles other formats.
+
+* [Daredevil (split binary) format](https://github.com/SideChannelMarvels/Daredevil). Jlsca supports reading and writing, and includes a converter to/from trs. Examples of conversion are in RHme notebooks below.
+* [ChipWhisperer project format](https://wiki.newae.com/File_Formats). Examples of how to convert data from CWP to trs are below in RHme2 notebooks. In case you would like to export a trs into CWP, here is the noteboook: [trs2cwp.ipynb](trs2cwp.ipynb).
+
+## DPA on SW AES implementations
 
 These are simple examples on how to do the SCA challenges of the [RHme2 embedded CTF](https://github.com/Riscure/Rhme-2016).
 
 * [piece of SCAke](rhme2-pieceofscake.ipynb) - correlation power analysis attack on unprotected AES-128
 * [still not SCAry](rhme2-stillnotscary.ipynb) - linear regression analysis attack on AES-128 with a misalignment countermeasure
 * [SCAlate](rhme2-escalate.ipynb) - correlation power analysis attack on AES-128 with a misalignment countermeasure
-    * A writeup showing how to adapt this example example to do [RHme3 SCA qualifier challange](https://github.com/Riscure/Rhme-2017/tree/master/prequalifications/Tracing%20the%20Traces): https://github.com/ResultsMayVary/ctf/tree/master/RHME3/tracing
-    * Another one: https://github.com/x8-999-github/cw-projects-experiments/blob/master/tracing_the_traces/tracing_the_traces_jlsca.ipynb
-    * Yet another one (with a rather weird key verification): https://gist.github.com/dqi/88c86e484fc9302694837810680d2023
 
 Tarballs with power traces available at https://drive.google.com/drive/folders/0B2slHLSL3nXaTFBWMUxHSkNmSTg, shasums included.
 
-## Examples whitebox
+Here are the external writeups showing how to adapt examples above to do [RHme3 SCA qualifier challange](https://github.com/Riscure/Rhme-2017/tree/master/prequalifications/Tracing%20the%20Traces): [[1]](https://github.com/ResultsMayVary/ctf/tree/master/RHME3/tracing), [[2]](https://github.com/x8-999-github/cw-projects-experiments/blob/master/tracing_the_traces/tracing_the_traces_jlsca.ipynb), [[3]](https://gist.github.com/dqi/88c86e484fc9302694837810680d2023). Note that due to recent changes in Jlsca these writeups need minor adjustments to be runnable.
+
+## DPA on whitebox implementations
 
 * [RHme 2017 qualifier whitebox challenge](rhme2017-qual-wb.ipynb). Traces [here in the tarball](rhme2017-qual-wb-traces.tar.bz2).
 
-## Example HPC (runnig on a computing cluster)
+## HPC (runnig on a computing cluster)
 
 Jlsca can be run on a cluster of Linux machines.
 
 * [HPC example](HPC.md) tested on the [Radboud University cluster](http://wiki.science.ru.nl/cncz/index.php?title=Hardware_servers&setlang=en#.5BReken-.5D.5BCompute_.5Dservers.2Fclusters) 
 
-## Examples SHA (HMAC)
+## DPA on HMAC-SHA
 
 * [DPA on HMAC-SHA1](hmacsha1pinata.ipynb) running on STM32F417 with hardware SHA accelerator. This is an advanced example. Traceset [here](https://drive.google.com/open?id=0B-My9BsChztIM21sdWxWRWRrZGs).
