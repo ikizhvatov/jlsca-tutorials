@@ -41,7 +41,7 @@ Here are the external writeups showing how to adapt examples above to do [RHme3 
 
 ## Second-order DPA
 
-* [Second-order DPA on the ASCAD traceset](secondorder-ascad/second-order-cpa-ascad.jl)
+* [Second-order DPA on the ASCAD traceset](secondorder-ascad/second-order-cpa-ascad.ipynb)
 
 ## DPA on whitebox implementations
 
