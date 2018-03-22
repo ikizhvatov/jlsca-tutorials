@@ -39,6 +39,10 @@ Tarballs with power traces available at https://drive.google.com/drive/folders/0
 
 Here are the external writeups showing how to adapt examples above to do [RHme3 SCA qualifier challange](https://github.com/Riscure/Rhme-2017/tree/master/prequalifications/Tracing%20the%20Traces): [[1]](https://github.com/ResultsMayVary/ctf/tree/master/RHME3/tracing), [[2]](https://github.com/x8-999-github/cw-projects-experiments/blob/master/tracing_the_traces/tracing_the_traces_jlsca.ipynb), [[3]](https://gist.github.com/dqi/88c86e484fc9302694837810680d2023). Note that due to recent changes in Jlsca these writeups need minor adjustments to be runnable.
 
+## Second-order DPA
+
+* [Second-order DPA on the ASCAD traceset](secondorder-ascad/second-order-cpa-ascad.jl)
+
 ## DPA on whitebox implementations
 
 * [RHme 2017 qualifier whitebox challenge](rhme2017-qual-wb.ipynb). Traces [here in the tarball](rhme2017-qual-wb-traces.tar.bz2).
