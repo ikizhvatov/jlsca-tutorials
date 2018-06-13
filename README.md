@@ -41,7 +41,7 @@ Here are the external writeups showing how to adapt examples above to do [RHme3 
 
 ## Second-order DPA
 
-* [Second-order DPA on the ASCAD traceset](secondorder-ascad/second-order-cpa-ascad.ipynb)
+* [Second-order DPA on the ASCAD traceset](secondorder-ascad/second-order-cpa-ascad.ipynb). This example almost directly applies to the [Rhme-2017](https://github.com/Riscure/Rhme-2017) _Random Random Everywhere_ challenge that features a masked AES implementation
 
 ## DPA on whitebox implementations
 
