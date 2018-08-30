@@ -1,6 +1,7 @@
 # Script version of the second order attack example using the ASCAD traceset
 
-addprocs(2) # add 2 workers (good for 2 CPU cores)
+using Distributed
+Distributed.addprocs(2) # add 2 workers (good for 2 CPU cores)
 
 @everywhere begin
     using Jlsca.Trs
