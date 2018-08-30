@@ -3,7 +3,7 @@ Examples on how to use [Jlsca](https://github.com/Riscure/Jlsca), the side chann
 
 ## Prerequisites
 
-* Julia (0.6.1 is tested), https://julialang.org
+* Julia (1.0 is tested on most examples), https://julialang.org
 * IJulia, https://github.com/JuliaLang/IJulia.jl
 * Jlsca package, https://github.com/Riscure/Jlsca
 * PyCall and PyPlot packages, install in julia via Pkg.add()
